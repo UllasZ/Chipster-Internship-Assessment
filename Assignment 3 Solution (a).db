@@ -1,6 +1,0 @@
-SELECT Movie.title, COUNT(DISTINCT M_Cast.PID) AS cast_size
-FROM M_Cast, Movie
-WHERE M_Cast.MID = Movie.MID
-GROUP BY M_Cast.MID
-ORDER BY cast_size DESC
-LIMIT 1;
