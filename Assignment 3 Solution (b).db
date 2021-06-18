@@ -1,5 +1,0 @@
-SELECT Movie.year, COUNT(*) AS number_of_movies 
-FROM Movie WHERE Movie.MID IN (
-                                SELECT M_Cast.MID 
-                                FROM M_Cast, Person 
-                                WHERE M_Cast.PID = Person.PID AND Person.Gender = 'Female');
